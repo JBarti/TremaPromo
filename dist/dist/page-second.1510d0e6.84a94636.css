@@ -1,16 +1,10 @@
-.page--second {
-    flex-direction: row;
-    align-items: flex-start;
-    align-content: space-between;
-    padding-top: 200px;
-    padding-bottom: 100px;
-    padding-right: 50px;
-}
+.page--second {}
 
 .asm {
+    position: absolute;
+    top: 120%;
+    left: 15%;
     perspective: 500px;
-    width: 555px;
-    height: 405px;
 }
 
 .asm:hover .asm__top {
@@ -62,6 +56,12 @@
     float: left;
 }
 
+.page__text {
+    float: right;
+    margin-right: 300px;
+    margin-top: 8%;
+}
+
 .text__selector {
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -69,7 +69,7 @@
     font-weight: 600;
     font-size: 25px;
     float: left;
-    margin-right: 50px;
+    margin-left: 50px;
     cursor: pointer;
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
@@ -83,18 +83,15 @@
     text-decoration: underline;
 }
 
-.page--text{
-    display: flex;
-    align-items: flex-start;
-}
-
 .text__content {
     font-family: 'Courier New', Courier, monospace;
     color: white;
     font-size: 21px;
     font-weight: 600;
+    margin-left: 50px;
     margin-top: 70px;
-    width: 650px;
+    padding: 10px;
+    width: 710px;
     line-height: 24px;
     text-align: justify;
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);

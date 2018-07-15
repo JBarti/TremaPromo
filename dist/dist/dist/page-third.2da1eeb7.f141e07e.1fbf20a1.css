@@ -1,15 +1,13 @@
 .tech {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 100px;
-    height: 200px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-items: center;
+    margin-bottom: 120px;
 }
 
 .tech__image {
     height: 200px;
-    width: 200px;
+    width: auto;
     border-style: solid;
     border-radius: 600px;
     border-width: 10px;
@@ -21,10 +19,7 @@
     width: 100vw;
     text-align: center;
     font-size: 50px;
-    margin-bottom: 75px;
+    margin-bottom: 90px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
-}
-.page--third{
-    flex-direction: column;
 }
