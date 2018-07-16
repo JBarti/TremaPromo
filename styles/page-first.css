@@ -15,9 +15,7 @@ body {
 
 .page__title {
     font-family: Arial, Helvetica, sans-serif;
-
     text-align: center;
-    top: 20%;
     font-size: 200px;
     font-weight: bold;
     text-shadow: 1px 1px #fe4902, 4px 4px #fe4902, 7px 7px #fe4902, 10px 10px #fe4902, 13px 13px #fe4902, 16px 16px #fe4902;
@@ -38,4 +36,29 @@ body {
 
 .page__title:hover .page__subtitle {
     display: block;
+}
+
+@media(max-width: 916px){
+    .page__title{
+        font-size: 150px;
+    }
+}
+
+@media(max-width: 764px){
+    .page__title{
+        font-size: 125px;
+    }
+}
+
+@media(max-width: 690px){
+    .page{
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+}
+
+@media(max-width: 590px){
+    .page__title{
+        font-size: 75px;
+    }
 }

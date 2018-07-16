@@ -99,3 +99,51 @@
     text-align: justify;
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
+
+@media(max-width: 1370px){
+    .asm__page{
+        height: 400px;
+        width: 300px;
+        align-self: center;
+    }
+    .text__content{
+        width: 550px;
+        font-size: 18px;
+    }
+    .page--second{
+        padding-left: 100px;
+    }
+}
+@media (max-width: 1100px) {
+    .page--second{
+        flex-direction: column;
+        align-items: center;
+    }
+    .asm{
+        margin-bottom: 100px;
+        width: 400px;
+    }
+}
+@media(max-width: 764px){
+    .asm{
+        display: none;
+    }
+    .text__content{
+        width: 100%;
+        margin-top: 120px;
+    }
+    .page--second{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .text__selector{
+        font-size: 22px;
+    }
+}
+@media(max-width: 590px){
+    .page--second{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
