@@ -1,0 +1,149 @@
+.page--second {
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: space-between;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    padding-right: 50px;
+}
+
+.asm {
+    perspective: 500px;
+    width: 555px;
+    height: 405px;
+}
+
+.asm:hover .asm__top {
+    top: -75px;
+    left: 75px;
+}
+
+.asm:hover .asm__second {
+    top: 25px;
+    left: -25px;
+}
+
+.asm__page {
+    position: absolute;
+    display: inline-block;
+    height: 500px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.712);
+    transform: rotateY(15deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.asm__div {
+    width: 80%;
+    height: 30%;
+    background-color: #8e44ad;
+    margin-left: 10%;
+    margin-top: 10%;
+    font-size: 150%;
+    color: white;
+}
+
+.asm__top {
+    left: 50px;
+    top: -50px;
+    transition: 0.5s;
+}
+
+.asm__second {
+    top: 0px;
+    left: 0px;
+    transition: 0.5s;
+}
+
+.asm__second>.asm__div--half {
+    margin-top: 45%;
+    background-color: #2980b9;
+    width: 35%;
+    float: left;
+}
+
+.text__selector {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 25px;
+    float: left;
+    margin-right: 50px;
+    cursor: pointer;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.text__selector:hover {
+    text-decoration: underline;
+    user-select: none;
+}
+
+.text__selector--selected {
+    text-decoration: underline;
+}
+
+.page--text{
+    display: flex;
+    align-items: flex-start;
+}
+
+.text__content {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 21px;
+    font-weight: 600;
+    margin-top: 70px;
+    width: 650px;
+    line-height: 24px;
+    text-align: justify;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+@media(max-width: 1370px){
+    .asm__page{
+        height: 400px;
+        width: 300px;
+        align-self: center;
+    }
+    .text__content{
+        width: 550px;
+        font-size: 18px;
+    }
+    .page--second{
+        padding-left: 100px;
+    }
+}
+@media (max-width: 1100px) {
+    .page--second{
+        flex-direction: column;
+        align-items: center;
+    }
+    .asm{
+        margin-bottom: 100px;
+        width: 400px;
+    }
+}
+@media(max-width: 764px){
+    .asm{
+        display: none;
+    }
+    .text__content{
+        width: 100%;
+        margin-top: 120px;
+    }
+    .page--second{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .text__selector{
+        font-size: 22px;
+    }
+}
+@media(max-width: 590px){
+    .page--second{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}

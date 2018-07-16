@@ -1,0 +1,64 @@
+body {
+    background-color: #f1c40f;
+}
+
+.page {
+    padding: 50px 150px 50px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page--first{
+    padding-top: 100px;
+}
+
+.page__title {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 200px;
+    font-weight: bold;
+    text-shadow: 1px 1px #fe4902, 4px 4px #fe4902, 7px 7px #fe4902, 10px 10px #fe4902, 13px 13px #fe4902, 16px 16px #fe4902;
+    color: #ecf0f1;
+    font-family: 'Bevan', cursive;
+}
+
+.page__letter {
+    display: inline;
+}
+
+.page__subtitle {
+    text-shadow: 1px 1px #fe4902, 2px 2px #fe4902, 3px 3px #fe4902, 4px 4px #fe4902, 5px 5px #fe4902, 6px 6px #fe4902;
+    font-size: 45px;
+    display: none;
+    transition: 0.5s;
+}
+
+.page__title:hover .page__subtitle {
+    display: block;
+}
+
+@media(max-width: 916px){
+    .page__title{
+        font-size: 150px;
+    }
+}
+
+@media(max-width: 764px){
+    .page__title{
+        font-size: 125px;
+    }
+}
+
+@media(max-width: 690px){
+    .page{
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+}
+
+@media(max-width: 590px){
+    .page__title{
+        font-size: 75px;
+    }
+}
